@@ -1,0 +1,86 @@
+@font-face {
+    font-family: myFont;
+    src: url(Syne-Regular.ttf);
+ }
+
+ * {
+    font-family: myFont;
+ }
+
+.navbar-container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.navbar-item {
+    background-color: aqua;
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 0px;
+    text-align: center;
+
+}
+.navbar-image {
+    justify-content:flex-start;
+    padding: 20px;
+    width: 32px;
+    height: 32px;
+    margin-top: 0px;
+
+
+}
+
+.navbar-buffer {
+    justify-content:center;
+    padding: 20px;
+    margin-top: 0px;
+    width: 100%;
+    align-items: streach;
+}
+
+header { 
+    width: 100%; 
+	margin: 0 auto; 
+	float: none; 
+}
+
+
+@media screen and (min-width: 601px) {
+    div.example {
+      font-size: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    div.example {
+      font-size: 60px;
+    }
+  }
+
+/* body { 
+	max-width: 800px; 
+	margin: 0 auto; 
+	float: none; 
+}
+ */
+
+
+
+a:link { 
+    color: #97ff0e;
+    text-decoration: none; 
+}
+
+a:hover { 
+    color: #ff008c;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
