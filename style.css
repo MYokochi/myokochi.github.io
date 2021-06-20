@@ -7,9 +7,7 @@
     font-family: myFont;
  }
 
- h1 {
-    font-size: 72px; /* Hero Image */
-}
+
 
  .page-size {
     max-width: 90%; 
@@ -67,22 +65,31 @@
 /* Hero Image */
 
 .hero-image {
-    height: fit-content;
-    margin-top: 200px;
+    margin-top: 150px;
+    font-size: 94px;
+    background-color: lightseagreen;
+    margin-bottom: 50px;
 }
 
-.svg-place {
+.svg-image {
     height: 164px;
     width: 260px;
+}
+
+.svg-container {
     display: flex;
-    align-items: flex-end;
+    flex-direction: row-reverse;
+    background-color: lightcoral;
     
 }
 
 .hero-container {
-    max-width: 80%;
-    margin: 0 auto;
-    float: none;
+    max-width: 80%; 
+	margin: 0 auto; 
+	float: none;
+    
+   
+  
 }
 
 
@@ -134,14 +141,6 @@
         flex-direction: column;
     }
 
-/*     .navbar a {
-        margin-top: 20px;
-    } */
-
-/*     .icon {
-        margin-right: 100%;
-        margin-left: 30px;
-    } */
     
     .hidden {
         display: none;
@@ -156,9 +155,17 @@
 
     }
 
-    .hero-container {
-        max-width: 100%;
+    .hero-image {
+        margin-top: 75px;
+        font-size: 42px;
+        margin-bottom: 20px;
     }
+
+    .svg-image {
+        height: 134px;
+        width: 230px;
+    }
+
 
  
 
