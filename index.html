@@ -10,25 +10,68 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-    <header>
-        <h4 class="navbar-container">
-            <a href="anotherPage.html"><img class="navbar-image" src="MY_icon@4x.png" alt="icon"></a>
-            <p class="navbar-buffer"></p>
-            <a class="navbar-item" href="anotherPage.html">Portfolio</a>
-            <a class="navbar-item" href="anotherPage.html">About</a>
-            <a class="navbar-item" href="anotherPage.html">Contact</a>
-        </h4>
-    
-    </header>
-    <body>
+    <body class="page-size"> 
+
+        <!-- Navigation Bar -->
+
+        <div class="navbar">
+            <img class="icon" src="MY_icon@4x.png" alt="icon">
+            <div class="links"> 
+                <a id="portfolio" class="hidden current" href="anotherPage.html">Portfolio</a>
+                <a id="about" class="hidden" href="anotherPage.html">About</a>
+                <a id="contact" class="hidden" href="anotherPage.html">Contact</a>
+            </div>
+
+            <div class="menu" id="toggle-button"> 
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </div>
+
+        <!-- Hero Image -->
 
         
+        <div class="hero-container"> 
+            <h1 class="hero-image">Hi, I'm Margarida. A Designer +</h1>
+           
+            <div style="display: flex; flex-direction: row-reverse;">
+            <img class="svg-place" src="SVG_placeholder@3x.png">
+            </div>
+        </div>
+       
         
        
+        <!-- Side Menu -->
 
-       
-        
+        <div class="sticky">
+            <div class="sections">
+                <a id="all" href="anotherPage.html">All</a>
+                <a id="marketing" href="anotherPage.html">Marketing</a>
+                <a id="product" href="anotherPage.html">Product</a>
+            </div>
+        </div>
 
+        <!-- Case Studies -->
 
+      <!--   <div  style="margin-top: 200px;"> 
+            <img class="thumbnail-image" src="MY_icon@4x.png" alt="icon">
+        </div> -->
+
+        <div>
+            <h1 style="margin-top: 3000px;"> Hello</h1>
+        </div>
     </body>
+
+    <script>
+        document
+            .getElementById("toggle-button")
+            .addEventListener("click", onClick)
+
+        function onClick() {
+            document.getElementById("portfolio").classList.toggle("hidden");
+            document.getElementById("about").classList.toggle("hidden");
+            document.getElementById("contact").classList.toggle("hidden");
+        }
+    </script>
 </html>
