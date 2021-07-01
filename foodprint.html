@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Margarida Yokochi Portfolio</title>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+		<meta name="description" content="Portfolio Test">
+		<meta name="keywords" content="Design, Portfolio">
+		<meta name="author" content="Margarida Yokochi">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body style="margin: 0;"> 
+
+		<!-- Navigation Bar -->
+		<div class="page-size">
+
+			<div class="navbar">
+				<img class="icon" src="MY_icon@4x.png" alt="icon">
+				<div class="links"> 
+					<a id="portfolio" class="hidden current" href="index.html">Portfolio</a>
+					<a id="about" class="hidden" href="about.html">About</a>
+				</div>
+
+				<div class="menu" id="toggle-button"> 
+					<div class="menu-line"></div>
+					<div class="menu-line"></div>
+					<div class="menu-line"></div>
+				</div>
+			</div>
+
+		
+
+		</div>
+
+		<div id="footer" class="footer">
+			<div class="socials">
+				<a href="mailto:margaridayokochi@icloud.com">
+					<img  src="socials/mail@4x.png" width="40" height="auto">
+				</a>
+				<a href="https://www.behance.net/margarisampaio" target="_blank">
+					<img  src="socials/behance@4x.png" width="40" height="auto">
+				</a>
+				<a href="https://www.behance.net/margarisampaio" target="_blank">
+					<img  src="socials/dribbble@4x.png" width="32" height="auto">
+				</a>
+				<a href="https://www.instagram.com/red_yellow_and_blue/" target="_blank">
+					<img  src="socials/instagram@4x.png" width="32" height="auto">
+				</a>
+			</div>
+			<p class="footer-info">Designed and built by Margarida Yokochi<br>&#169; June 2021</p>
+			<img class="icon" style="margin-bottom: 20vh;" src="MY_iconDark@1x.png" alt="icon">  
+		</div>
+	</body>
+
+	<script>
+		document
+			.getElementById("toggle-button")
+			.addEventListener("click", onClick)
+
+		function onClick() {
+			document.getElementById("portfolio").classList.toggle("hidden");
+			document.getElementById("about").classList.toggle("hidden");
+			document.getElementById("contact").classList.toggle("hidden");
+		}
+	</script>
+</html>
