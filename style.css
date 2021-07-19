@@ -17,16 +17,40 @@
     font-family: SyneRegular;
  }
 
+ body {
+     margin: 0;
+     background-color: #FAFAFB;
+ }
+
  p {font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 20px;
-    line-height: 180%;
-    margin: 0;
+    line-height: 200%;
+    margin: 10px 0;
+    color: #2f3542;
 }
 
+h2 {
+    font-size: 60px;
+    margin: 0;
+    color: #2f3542;
+}
 
  h3 {
-     font-size: 40px;
+     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+     font-size: 16px;
+     letter-spacing: 2px;
      margin: 0;
+     color: #2F3542;
+     text-transform: uppercase;
+     opacity: 0.4;
+     margin-bottom: 3vh;
+ }
+
+ h4 {
+     font-size: 30px;
+     color: #2f3542;
+     margin: 0;
+
  }
 
 
@@ -91,6 +115,7 @@
     margin-top: 20vh;
     font-size: 60px;
     font-family: SyneSemiBold;
+    color: #100B28;
 }
 
 .svg-image {
@@ -151,10 +176,20 @@
 .thumbnail {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .thumbnail a {
-    margin-top: 5vh;
+    margin-top: 10vh;
+    text-decoration: none;
+    font-size: 30px;
+    color: #606060;
+}
+
+.thumbnail-description {
+    margin-top: 2vh;
+    font-size: 30px;
+    color: #2f3542;
 }
 
 
@@ -164,6 +199,24 @@
     height: auto;
   }
 
+.responsive-top {
+    width: 100%;
+    height: auto;
+
+}
+
+
+/* Case Study */
+
+.case-study {
+    display: flex;
+    flex-direction: column;
+    max-width: 60vw;
+    margin: 0 auto;
+
+    
+}
+
 
 
 /* Footer */
@@ -171,11 +224,12 @@
 .footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     background-color: #BBB2E9;
-    color: #606060;
+    color: #2f3542;
     height: 90vh;
+    margin-top: 15vh;
 
 }
 
@@ -253,6 +307,7 @@
     .socials a {
         margin: 8vw;
     }
+
 
 
 }
