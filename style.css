@@ -1,25 +1,25 @@
 @font-face {
     font-family: SyneRegular;
-    src: url(fonts/Syne-Regular.ttf);
+    src: url(Fonts/Syne-Regular.ttf);
  }
 
  @font-face {
      font-family: SyneSemiBold;
-     src: url(fonts/Syne-SemiBold.ttf);
+     src: url(Fonts/Syne-SemiBold.ttf);
  }
 
  @font-face {
      font-family: OpenSansRegular;
-     src: url(fonts/OpenSans-Regular.ttf);
+     src: url(Fonts/OpenSans-Regular.ttf);
  }
 
  @font-face {
     font-family: OpenSansBold;
-    src: url(fonts/OpenSans-Bold.ttf);
+    src: url(Fonts/OpenSans-Bold.ttf);
 }
 @font-face {
     font-family: OpenSansSemiBold;
-    src: url(fonts/OpenSans-SemiBold.ttf);
+    src: url(Fonts/OpenSans-SemiBold.ttf);
 }
 
  * {
