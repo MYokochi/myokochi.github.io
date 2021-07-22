@@ -10,77 +10,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
-	<body> 
+    <body>
+        <!-- Navbar -->
+		<nav class="navbar">
+            <a href="index.html">Portfolio</a>
 
-		<!-- Navigation Bar -->
-		<div class="page-size">
+        </nav>
+        
+        <div class="hero-section">
+            <img src="Media/MY_picture@3x.png" class="photo">
+            <div class="hero-text">
+                <h1>✨ Hi, I’m Margarida.</h1>
+                <p>Product designer and learner to things. I love creating experiences that positively impact people’s lives.</p>
+                <p>I work best in a problem solving mindset, considering all different aspects of a problem and coming up with creative solutions. I’m always looking for opportunities to learn new skills that complement my main design development.</p>
+            </div>
+        </div>
 
-			<div class="navbar">
-				<img class="icon" src="icon_blank.png" alt="icon">
-				<div class="links"> 
-					<a id="portfolio" class="hidden current" href="index.html">Portfolio</a>
-					<a id="about" class="hidden" href="about.html">About</a>
-				</div>
+        <!-- Thumbnails -->
+        <div class="thumbnail">
+            <img src="media/FoodPrint_thumbnail.png" class="responsive" width="300" height="300">
+            <div class="thumbnail-text">
+                <h1>Food Print</h1>
+                <h3>An Infographic on the environmental impact of diet and lifestyle. </h3>
+                <img src="Media/Tags@3x.png" class="tags">
+                <a href="foodprint.html"><h5>View Case Study</h5></a>
+            </div>
+        </div>
 
-				<div class="menu" id="toggle-button"> 
-					<div class="menu-line"></div>
-					<div class="menu-line"></div>
-					<div class="menu-line"></div>
-				</div>
-			</div>
-
-
-
-			<!-- Side Menu -->
-
-		<!-- 	<div class="sticky">
-				<div class="sections">
-					<a href="#marketing">Marketing</a>
-					<a href="#product">Product</a>
-					<a href="#illustration">Illustration</a>
-				</div>
-			</div> -->
-
-			<!-- Thumbnails -->
-
-			<div class="thumbnail">
-				<a href="foodprint.html">
-					<img id="marketing" src="thumbnail_test2.png" class="responsive" width="900" height="500">
-					<div class="thumbnail-description">Food Print - An infographic on the environmental impact of diet and lifestyle.</div>
-				</a>
-				<a href="foodprint.html">
-					<img id="product" src="thumbnail_test3.png" class="responsive" width="900" height="500">
-					<div class="thumbnail-description">Food Print - An infographic on the environmental impact of diet and lifestyle.</div>
-				</a>
-				<a href="foodprint.html">
-					<img id="illustration" src="thumbnail_test.png" class="responsive" width="900" height="500">
-					<div class="thumbnail-description">Food Print - An infographic on the environmental impact of diet and lifestyle.</div>
-				</a>
-			</div>
-
-<!-- 			<div class="container first">
-				<img id="marketing" src="thumbnail_test2.png" class="responsive" width="900" height="500">
-				<div class="overlay">
-					<div class="text">Food Print</div>
-				  </div>
-			</div>
-			<div class="container">
-				<img id="marketing" src="thumbnail_test2.png" class="responsive" width="900" height="500">
-				<div class="overlay">
-					<div class="text">Food Print</div>
-				  </div>
-			</div>
-			<div class="container">
-				<img id="marketing" src="thumbnail_test2.png" class="responsive" width="900" height="500">
-				<div class="overlay">
-					<div class="text">Food Print</div>
-				  </div>
-			</div> -->
-		
-
-		</div>
-
-		<div id="footer" class="footer">
+        <!-- Footer -->
+        <footer class="footer">
 			<div class="socials">
 				<a href="mailto:margaridayokochi@icloud.com">
 					<img  src="socials/mail@4x.png" width="40" height="auto">
@@ -95,20 +53,9 @@
 					<img  src="socials/instagram@4x.png" width="32" height="auto">
 				</a>
 			</div>
-			<p class="footer-info">Designed and built by Margarida Yokochi<br>&#169; June 2021</p>
-			<!-- <img class="icon" style="margin-bottom: 20vh;" src="MY_iconDark@1x.png" alt="icon"> -->
-		</div>
-	</body>
+			<p style="text-align: center;">Designed and built by Margarida Yokochi<br>&#169; June 2021</p>
+        </footer>
+    </body>
 
-	<script>
-		document
-			.getElementById("toggle-button")
-			.addEventListener("click", onClick)
 
-		function onClick() {
-			document.getElementById("portfolio").classList.toggle("hidden");
-			document.getElementById("about").classList.toggle("hidden");
-			document.getElementById("contact").classList.toggle("hidden");
-		}
-	</script>
 </html>
