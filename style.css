@@ -43,9 +43,12 @@ h1 {
 }
 
 h2 {
-    font-size: OpenSansSemiBold;
-    color: #C2C1C7;
+    font-family: OpenSansSemiBold;
+    color: #2f3542;
     text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    margin-top: 5vh;
 }
 
 h3 {
@@ -58,22 +61,30 @@ h3 {
 h4 {
     font-family: OpenSansSemiBold;
     color: #2f3542;
+    margin-bottom: 0;
 }
 
 h5 {
     font-family: OpenSansBold;
     color: #2f3542;
     text-decoration: underline;
+    text-underline-offset: 0.3em;
+    text-decoration-thickness: 0.3em;
 }
+
 
 h6 {
     font-family: OpenSansBold;
     color: #2f3542;
 }
 
-
-
-
+.client {
+    color: #C2C1C7;
+    margin-top: 0;
+    font-size: 0.9em;
+    letter-spacing: 0.15em;
+    margin-bottom: 3vh;
+}
 
 
  .page-size {
@@ -129,7 +140,7 @@ h6 {
     align-items: center;
     justify-content: center;
     padding: 5vw;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -145,31 +156,83 @@ h6 {
     max-width: 350px;
     height: auto;
   }
-
-.responsive-top {
+.responsive-image {
     width: 100%;
+    max-width: 550px;
     height: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
 
+.responsive-infographic {
+    width: 100%;
+    max-width: 950px;
+    height: auto;
+    padding: 5vh;
 }
 
 .tags {
-    width: 263px;
-    height: 24px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.tags p {
+    font-size: 0.8em;
+    background-color: #F2F2F3;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 2vw;
+}
+
+.view :hover {
+    background-color: #F6E390;
+    width: fit-content;
+    padding: 5;
+    
+    
+
 }
 
 
 /* Case Study */
 
+
 .case-study {
     display: flex;
     flex-direction: column;
-    max-width: 60vw;
-    margin: 0 auto;
+    align-items: center;
+}
 
+.case-study-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    margin: 0 auto;
+    padding-bottom: 5vh;
     
 }
 
+.lilac-section {
+    background-color: #F1EFFA;
+    width: 100%;
+    padding-top: 5vh;
+}
 
+.hero-food-print {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: linear-gradient(#F6E390, #F4D54B);
+    height: 35vh;
+    align-items: center;
+    padding: 5vw;
+}
+
+.two-images {
+    display: flex;
+    align-items: center;
+}
 
 /* Footer */
 
@@ -206,9 +269,7 @@ h6 {
         height: 90vh;
         align-items: flex-start;
         max-width: 90vw;
-        margin: 0 auto;
-        
-        
+        margin: 0 auto;  
     }
 
     .photo {
@@ -219,11 +280,25 @@ h6 {
     .thumbnail {
         flex-direction: column;
     }
+
+    .case-study-text {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
     
     .socials a {
         margin: 8vw;
     }
 
+    .responsive-infographic {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .responsive {
+        max-width: 250px;
+        margin: 0 auto;
+    }
 
 
 }
