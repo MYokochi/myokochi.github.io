@@ -27,7 +27,9 @@
  }
 
  body {
-     margin: 0;
+     margin: 0 auto;
+     padding: 0;
+     float: none;
      background-color: #FAFAFB;
  }
 
@@ -90,11 +92,7 @@ h6 {
 }
 
 
- .page-size {
-    max-width: 90%; 
-	margin: 0 auto; 
-	float: none;
- }
+
 
 .navbar {
     display: flex;
@@ -163,15 +161,16 @@ h6 {
     width: 100%;
     max-width: 650px;
     height: auto;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .responsive-infographic {
     width: 100%;
     max-width: 950px;
     height: auto;
-    padding: 5vh;
+    margin-bottom: 5vh;
+    
 }
 
 .tags {
@@ -253,27 +252,42 @@ h6 {
 
 .socials {
     display: flex;
+    width: 400px;
     justify-content: space-between;
     align-items: center;
     margin-top: 30vh;
 }
 
-.socials a {
-    margin: 50px;
-}
-
-
-
-
 
 @media all and (max-width: 600px) {
 
+    h1 {
+        font-size: 2.4em;
+    }
+
+    .client {
+        font-size: 0.7em;
+        letter-spacing: 0.1;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+    
+
     .hero-section {
         flex-direction: column;
-        height: 90vh;
         align-items: flex-start;
-        max-width: 90vw;
+        height: fit-content;
         margin: 0 auto;  
+    }
+
+    .hero-text {
+        max-width: 90vw;
     }
 
     .photo {
@@ -292,16 +306,17 @@ h6 {
 
     }
 
-    .socials a {
-        margin: 8vw;
-    }
 
     .responsive-infographic {
         max-width: 90vw;
     }
 
     .responsive {
-        max-width: 30vw;
+        max-width: 40vw;
+    }
+
+    .socials {
+        width: 90vw;
     }
 
 
