@@ -235,6 +235,7 @@ h6 {
 .two-images {
     display: flex;
     align-items: center;
+    margin-bottom: 5vh;
 }
 
 /* Footer */
@@ -284,22 +285,26 @@ h6 {
         flex-direction: column;
     }
 
-    .case-study-text {
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
     
+    .case-study-text {
+        max-width: 90vw;
+        margin: 0 auto;
+
+    }
+
     .socials a {
         margin: 8vw;
     }
 
     .responsive-infographic {
-        max-width: 350px;
+        max-width: 90vw;
     }
 
     .responsive {
-        max-width: 200px;
+        max-width: 30vw;
     }
+
+
   
 
 }
