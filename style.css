@@ -81,6 +81,7 @@ h5 {
 h6 {
     font-family: OpenSansBold;
     color: #2f3542;
+    margin-bottom: 0;
 }
 
 .client {
@@ -170,7 +171,13 @@ h6 {
     max-width: 950px;
     height: auto;
     margin-bottom: 5vh;
-    
+}
+
+.responsive-small {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 5vh;
 }
 
 .tags {
@@ -226,6 +233,16 @@ h6 {
     flex-direction: row;
     justify-content: center;
     background-image: linear-gradient(#F6E390, #F4D54B);
+    height: 35vh;
+    align-items: center;
+    padding: 5vw;
+}
+
+.hero-mentor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: linear-gradient(#DFDBF0, #AEA6D9);
     height: 35vh;
     align-items: center;
     padding: 5vw;
