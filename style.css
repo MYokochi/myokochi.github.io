@@ -71,10 +71,6 @@ h4 {
 
 h5 {
     font-family: OpenSansBold;
-    color: #2f3542;
-    text-decoration: underline;
-    text-underline-offset: 0.3em;
-    text-decoration-thickness: 0.3em;
 }
 
 
@@ -204,7 +200,9 @@ h6 {
     padding: 5;
 }
 .view {
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+    text-decoration-thickness: 0.3em;
 }
 
 /* Case Study */
