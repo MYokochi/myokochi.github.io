@@ -3,7 +3,7 @@
 	<head>
 		<title>Margarida Yokochi Portfolio</title>
 		<link rel="stylesheet" href="style.css">
-        <link rel="icon" href="MY_icon.png" type="image/png" sizes="16x16">
+        <link rel="icon" href="Media/Icon@2x.ico">
 		<meta charset="UTF-8">
 		<meta name="description" content="Portfolio Test">
 		<meta name="keywords" content="Design, Portfolio">
@@ -13,105 +13,76 @@
 
     <body>
         <!-- Navbar -->
-		<nav class="navbar">
-            <a href="index.html">Portfolio</a>
+		<nav class="nav-bar">
+            <a style="opacity: 100%;" href="index.html">Portfolio</a>
+            <a href="about.html">About</a>
         </nav>
         
         <div class="hero-section">
-            <img src="Media/MY_picture@3x.png" class="photo">
-            <div class="hero-text">
-                <h1>✨ Hi, I’m Margarida.</h1>
-                <p>Product designer and learner of things. I love creating experiences that positively impact people’s lives.</p>
-                <p>I work best in a problem solving mindset, considering all different aspects of a problem and coming up with creative solutions. I’m always looking for opportunities to learn new skills that complement my main design development.</p>
+            <div class="hero-container">
+                <div>
+                    <h1>✨ Hi, I’m Margarida.</h1>
+                    <p>Product designer creating experiences that positively impact people’s lives.</p>
+                </div>
+                <a type="button" class="button button1" href="about.html">Learn more</a>
             </div>
         </div>
 
         <!-- Thumbnails -->
         <div class="thumbnail">
-            <img src="Media/Cinematic/Cinematic_thumbnail.png" class="responsive" width="100" height="100">
-            <div class="thumbnail-text">
-                <h1>Cinematic</h1>
-                <h3>Seat reservation app for a cinema.</h3>
-                <div class="tags">
-                    <p>UI/UX</p>
-                    <p>Mobile</p>
-                    <p>User Testing</p>
+            <img src="Media/Landing/Cinematic@2x.png" class="responsive-no-padding" width="350px" height="auto">
+            <div class="thumbnail-container">
+                <div class="thumbnail-text">
+                    <h1>Cinematic</h1>
+                    <h5>Seat reservation app for a cinema.</h5>
                 </div>
-                <a href="Media/Cinematic/Cinematic_CaseStudyDeck.pdf" class="view"><h5>View</h5></a>
+                <a type="button" href="cinematic.html" class="button button2">View case study</a>
             </div>
         </div>
 
         <div class="thumbnail">
-            <img src="Media/Vaccination/Vaccination_thumbnail.png" class="responsive" width="100" height="100">
-            <div class="thumbnail-text">
-                <h1>Vaccination</h1>
-                <h3>Vaccination app and responsive website.</h3>
-                <div class="tags">
-                    <p>UI/UX</p>
-                    <p>Mobile</p>
-                    <p>User Testing</p>
+            <img src="Media/Landing/Mentor@2x.png" class="responsive-no-padding" width="350px" height="auto">
+            <div class="thumbnail-container">
+                <div class="thumbnail-text">
+                    <h1>Mentor</h1>
+                    <h5>Concept for an app based on the principles of deliberate practice.</h5>
                 </div>
-                <a href="Media/Vaccination/Google UX Design Certificate - Portfolio Project 3 - Case study slide deck Vaccination app.pdf" class="view"><h5>View</h5></a>
+                <a type="button" href="mentor.html" class="button button2">View case study</a>
             </div>
         </div>
 
         <div class="thumbnail">
-            <img src="Media/Machi/Machi_thumbnail.png" class="responsive" width="100" height="100">
-            <div class="thumbnail-text">
-                <h1>Machi</h1>
-                <h3>Digital menu for a restaurant.</h3>
-                <div class="tags">
-                    <p>UI/UX</p>
-                    <p>Mobile</p>
-                    <p>User Testing</p>
+            <img src="Media/Landing/Foodprint@2x.png" class="responsive-no-padding" width="350px" height="auto">
+            <div class="thumbnail-container">
+                <div class="thumbnail-text">
+                    <h1>Food Print</h1>
+                    <h5>An Infographic on the environmental impact of diet and lifestyle.</h5>
                 </div>
-                <a href="Media/Machi/Google UX Design Certificate - Portfolio Project 2 - Case study slide deck Machi restaurant.pdf" class="view"><h5>View</h5></a>
+                <a type="button" href="foodprint.html" class="button button2">View case study</a>
             </div>
         </div>
 
-        <div class="thumbnail">
-            <img src="Media/Mentor/Mentor_thumbnail_transparent.png" class="responsive" width="100" height="100">
-            <div class="thumbnail-text">
-                <h1>Mentor</h1>
-                <h3>Concept for an app based on principles of deliberate practice.</h3>
-                <div class="tags">
-                    <p>UI/UX</p>
-                    <p>Mobile</p>
-                    <p>User Testing</p>
-                </div>
-                <a href="mentor.html" class="view"><h5>View</h5></a>
-            </div>
-        </div>
-
-        <div class="thumbnail">
-            <img src="Media/FoodPrint_thumbnail_transparent.png" class="responsive" width="300" height="300">
-            <div class="thumbnail-text">
-                <h1>Food Print</h1>
-                <h3>An Infographic on the environmental impact of diet and lifestyle. </h3>
-                <div class="tags">
-                    <p>Infographic</p>
-                    <p>Illustration</p>
-                    <p>Data Visualisation</p>
-                </div>
-                <a href="foodprint.html" class="view"><h5>View</h5></a>
-            </div>
-        </div>
-
+       
         <!-- Footer -->
         <footer class="footer">
 			<div class="socials">
-				
 				<a href="https://mobile.twitter.com/yokochidesign" target="_blank">
-					<img  src="socials/twitter@2x.png" width="46" height="auto">
+					<img  src="Media/Socials/Twitter.svg" width="44px" height="auto">
 				</a>
+
 				<a href="https://dribbble.com/Yokochi" target="_blank">
-					<img  src="socials/dribbble@4x.png" width="32" height="auto">
+					<img  src="Media/Socials/Dribbble.svg" width="34px" height="auto">
 				</a>
-				<a href="https://www.instagram.com/red_yellow_and_blue/" target="_blank">
-					<img  src="socials/instagram@4x.png" width="32" height="auto">
+
+				<a href="https://www.behance.net/margarisampaio" target="_blank">
+					<img  src="Media/Socials/Behance.svg" width="44px" height="auto">
+				</a>
+
+                <a href="https://www.linkedin.com/in/margarida-yokochi/" target="_blank">
+					<img  src="Media/Socials/Linkedin.svg" width="34px" height="auto">
 				</a>
 			</div>
-			<p style="text-align: center; width: 90vw;">Designed and built by Margarida Yokochi<br>&#169; June 2021</p>
+			<p class="footer-text"><br>&#169; November 2021</p>
         </footer>
     </body>
 

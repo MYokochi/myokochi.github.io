@@ -3,3 +3,7 @@ cd drag the folder
 git add .
 git commit -m "Some message"
 git push
+
+After Software Update
+
+xcode-select --install
