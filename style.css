@@ -44,7 +44,7 @@
 h1 {
     font-family: SyneSemiBold;
     color: #2f3542;
-    font-size: 4em;
+    font-size: 41px;
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -101,21 +101,50 @@ h5 {
 
 /* Containers */
 
+.text-container {
+    max-width: 650px;
+    margin: 20px 20px 20px 20px;
+}
+
 .grid-container {
     max-width: 700px;
     margin: 0 auto;
     padding: 50px 0;
 }
 
-.text-container {
-    max-width: 650px;
+.small-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.big-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    margin: 50px 20px 50px 20px;
+}
+
+.thumbnail-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 20px 20px 20px 20px;
 }
 
 .two-items-flex {
     display: flex; 
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
 }
 
 .two-column-grid {
@@ -282,34 +311,20 @@ h5 {
 
   /* Case Studies */
 
-.thumbnails {
-    max-width: 900px;
-    margin: 0 auto;
-}
 
-.thumbnail-container {
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.thumbnail-text {
-    display: flex;
-    flex-direction: column;
-}
 
 
 
 /* Footer */
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.background-dark {
     background-color: #736496;
+    
+}
+
+.footer-height {
     height: 40vh;
-    margin-top: 100px;
+    padding-top: 30%;
 }
 
 .footer-text {
@@ -319,9 +334,13 @@ h5 {
     opacity: 85%;
 }
 
-.socials {
+.socials-container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.socials-flex {
     display: flex;
-    width: 400px;
     justify-content: space-around;
 }
 
@@ -342,35 +361,29 @@ h5 {
         padding: 20px;
     }
 
+    .margin {
+        margin: 20px;
+    }
+
+
+    .flex-row {
+        flex-direction: column;
+        align-items: center;
+    }
 
     .thumbnail-container {
         flex-direction: column;
     }
 
-    .thumbnail-text {
+    .text-centre{
         text-align: center;
-        align-items: center;
-       
     }
 
     .item-a {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .header-section {
-        flex-direction: column;
-    }
-
-    .header-container {
-        align-items: center;
-        margin-left: 0;
-    }
-
-    .users-container {
-        flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
 
     .two-items-flex {
