@@ -18,26 +18,28 @@
             <a href="about.html">About</a>
         </nav>
 
-        <div class="header-section">
-            <img src="Media/Cinematic/01.Cinematic_WalletNotification@2x.png" class="responsive" width=256px height="544.65">
-            <div class="header-container">
-                <div class="header-text">
-                    <p><b>Project: </b>Cinematic</p>
-                    <p><b>Role: </b>UX design, UX research</p>
-                    <p><b>Project: </b>September 2021 - November 2021</p>
+        <div class="background-purple">
+            <div class="grid-container">
+                <div class="two-items-flex">
+                    <img src="Media/Cinematic/01.Cinematic_WalletNotification@2x.png" class="responsive-no-padding" width=256px height="auto">
+                    <div class="item-a">
+                        <p><b>Project: </b>Cinematic</p>
+                        <p><b>Role: </b>UX design, UX research</p>
+                        <p><b>Project: </b>September 2021 - November 2021</p>
+                        <a type="button" class="button button2" href="about.html">Process deck</a>
+                    </div>
                 </div>
-                <a type="button" class="button button2" href="about.html">Process deck</a>
             </div>
         </div>
 
         <!-- Case Study -->
-        <div class="case-study">
-            <div class="case-study-text">
+        <div class="align-centre">
+            <div class="text-container">
                 <h2>Overview</h2>
 				<p>Cinematic is a seat reservation app for a cinema. The main goal of the app is to improve the cinema experience by letting users manage bookings through their phones and minimise time spent queuing. This project was developed through an iterative process based on insights from user research. Each iteration aimed to improve the product by addressing real user needs and pain points.</p>
             </div>
 
-            <div class="case-study-text">
+            <div class="text-container">
                 <h2>Challenges</h2>
                 <p><b class="highlight">1)</b> Simplify the process for buying cinema tickets</p>
                 <p><b class="highlight">2)</b> Create an intuitive user flow for uses of different backgrounds and age groups</p>
@@ -46,11 +48,11 @@
 
 			<img src="Media/Cinematic/02.Cinematic_ProjectDetails@2x.png" class="responsive" width="318px" height="auto">
 			
-			<div class="background-purple">
-				<div class="case-study-text">
+			<div class="background-purple align-centre">
+				<div class="text-container">
 					<h2>Kickoff</h2>
 					<p>The iterative approach proved to be an effective way of developing the product and improve it at each step. To kickoff the project I gathered data that would later inform the design decisions. I used qualitative research methods as they seemed the most useful to guide the initial product direction. This included user interviews, a competitive audit, the creation of personas and user journey maps. To prepare for the research I started by asking some initial key questions.</p>
-                        <div class="quotes">
+                        <div class="two-column-grid">
                             <div class="blockquote">
                                 <p>"What is the product and who is it for?"</p>
                                 <p>"What do the primary users need most?"</p>
@@ -65,19 +67,19 @@
 				</div>
 			</div>
 
-            <div class="case-study-text">
+            <div class="text-container">
                 <h2>Meet the users</h2>
-                <div class="users-container">
-                    <img src="Media/Cinematic/Persona1.svg" class="responsive" width="122px" height="auto">
-                    <div class="persona-details">
+                <div class="two-column-grid justify-centre">
+                    <img src="Media/Cinematic/Persona1.svg" class="responsive" id="persona" width="122px" height="auto">
+                    <div>
                         <p><b>Name:</b> Linda</p>
                         <p><b>Age:</b> 50</p>
                         <p><b>Education:</b> Phd Mathematics</p>
                         <p><b>Occupation:</b> Professor</p>
                     </div>
                 </div>
-                <div class=user-points>
-                    <div style="display: flex; flex-direction: column;">
+                <div class=two-column-grid>
+                    <div>
                         <div class="icon-title">
                             <img src="Media/Cinematic/Icons/Star.svg" class="icon">
                             <h3>Goals</h3>
@@ -88,7 +90,7 @@
                             <li>Watch a film that got good reviews</li>
                         </ul>
                     </div>
-                    <div style="display: flex; flex-direction: column; max-width: 325px; margin: 0 auto;">
+                    <div>
                         <div class="icon-title">
                             <img src="Media/Cinematic/Icons/Problem.svg" class="icon">
                             <h3>Frustrations</h3>
@@ -100,7 +102,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="case-study-text">
+                <div class="text-container">
                     <p class="text-high"><b>Problem statement</b></p>
                     <p>Linda is a busy professional who needs a way to check the availability of cinemas and buy tickets because she hates spending time queuing.</p>
                 </div>
@@ -109,18 +111,18 @@
 
             <div class="line"></div>
 
-            <div class="case-study-text">
-                <div class="users-container">
-                    <img src="Media/Cinematic/Persona2.svg" class="responsive" width="122px" height="auto">
-                    <div class="persona-details">
+            <div class="text-container">
+                <div class="two-column-grid justify-centre">
+                    <img src="Media/Cinematic/Persona2.svg" class="responsive" id="persona" width="122px" height="auto">
+                    <div>
                         <p><b>Name:</b> Tom</p>
                         <p><b>Age:</b> 16</p>
                         <p><b>Education:</b> Highschool</p>
                         <p><b>Occupation:</b> Student</p>
                     </div>
                 </div>
-                <div class=user-points>
-                    <div style="display: flex; flex-direction: column;">
+                <div class="two-column-grid">
+                    <div>
                         <div class="icon-title">
                             <img src="Media/Cinematic/Icons/Star.svg" class="icon">
                             <h3>Goals</h3>
@@ -131,7 +133,8 @@
                             <li>Buy seats next to friends</li>
                         </ul>
                     </div>
-                    <div style="display: flex; flex-direction: column; max-width: 325px; margin: 0 auto;">
+                    
+                    <div>
                         <div class="icon-title">
                             <img src="Media/Cinematic/Icons/Problem.svg" class="icon">
                             <h3>Frustrations</h3>
@@ -142,44 +145,42 @@
                             <li>Limited payment options</li>
                         </ul>
                     </div>
+                    
                 </div>
-                <div class="case-study-text">
+                <div class="text-container">
                     <p class="text-high"><b>Problem statement</b></p>
                 <p>Tom is a high school student who needs a better way to coordinate group tickets with friends because it’s hard to find seats for popular films.</p>
                 </div>
                 
             </div>
 
-            <div style="margin-top: 50px;">
-                <img src="Media/Cinematic/03.Cinematic_PaperWireframes@2x.jpg" class="responsive" width="650px" height="auto">
+            <div class="image-container">
+                <img src="Media/Cinematic/03.Cinematic_PaperWireframes@2x.jpg" class="responsive-no-padding" width="900px" height="auto">
             </div>
 
-            <div class="case-study-text">
+            <div class="text-container">
                 <h2>Ideation</h2>
 				<p>After sketching out paper wireframes and highlighting promising features to explore I started developing low-fidelity wireframes. At this stage, I explored the underlying UX in depth and iterated quickly on possible design solutions. The main problems I wanted to solve were how to make the main user flow, buying cinema tickets, as simple as possible and how to effectively display the most relevant information for users.</p>
                 <img src="Media/Cinematic/04.Cinematic_Wireframes@2x.jpg" class="responsive" width="650px" height="auto">
             </div>
 
-            <div class="background-purple">
-				<div class="case-study-text">
+            <div class="background-purple align-centre">
+				<div class="text-container">
 					<h2>Iteration</h2>
 					<p>After creating an interactive prototype from low fidelity wireframes, I conducted the first round of usability studies. This was a very important step as it generated valuable insights that helped me further iterate and improve the designs. The next step was to create mockups and a high fidelity prototype to conduct the second round of usability studies. These were the main findings:</p>
-                    <div class="insights">
+                    <div class="align-centre">
                         <img src="Media/Cinematic/Icons/Problem.svg">
                         <h2>Group ticket?</h2>
                         <p>Most users were confused by this feature. The idea was to offer an option to reserve the tickets together but pay separately. In practice, users thought the feature added unnecessary complexity and preferred to buy all the tickets together.</p>
-                    </div>
-                    <div class="insights">
+
                         <img src="Media/Cinematic/Icons/Problem.svg">
                         <h2>Location</h2>
                         <p>Most users were confused by this feature. The idea was to offer an option to reserve the tickets together but pay separately. In practice, users thought the feature added unnecessary complexity and preferred to buy all the tickets together.</p>
-                    </div>
-                    <div class="insights">
+
                         <img src="Media/Cinematic/Icons/Problem.svg">
                         <h2>Feedback</h2>
                         <p>There were still some points in the flow that lacked adequate feedback. Users wanted to be able to see how the final price was affected when they made use of discounts. The designs at this stage only showed the final price as the user was about to pay.</p>
-                    </div>
-                    <div class="insights">
+
                         <img src="Media/Cinematic/Icons/Problem.svg">
                         <h2>Payment</h2>
                         <p>Users were pleased to find multiple payment options that suited different user groups. Some users expressed they wanted the possibility to save payment details. This would simplify the checkout flow and make the experience more seamless.</p>
@@ -189,40 +190,53 @@
 
             <img src="Media/Cinematic/05.Results-progressive.jpeg" width="100%" height="auto">
 
-            <div class="case-study-text">
+            <div class="text-container">
                 <p class="highlight"><b>Challenge 1</b></p>
                 <h2>Simplify</h2>
 				<p>Working out how to arrange and prioritise the necessary information for users was one of the main design challenges for the app. The main user flow, of buying the tickets, had to be as simple and fast as possible in order to clearly add value to the users by saving them time. The insights gained during the usability studies helped bring each iteration of the designs closer to what users really needed. The final designs allowed users to filter by location, minimised the amount of steps for the main user flow and provided information on public transport and wheelchair access through the use of icons.</p>
             </div>
 
-            <div class="results">
-                <img src="Media/Cinematic/Results/01Sessions-progressive.jpeg" class="responsive" width="200px" height="auto">
-                <img src="Media/Cinematic/Results/02Wallet-progressive.jpeg" class="responsive" width="200px" height="auto">
+            <div class="background-grey">
+                <div class="two-images-container">
+                    <div class="two-column-grid justify-centre">
+                        <img src="Media/Cinematic/Results/01Sessions-progressive.jpeg" class="responsive" width="200px" height="auto">
+                        <img src="Media/Cinematic/Results/02Wallet-progressive.jpeg" class="responsive" width="200px" height="auto">
+                    </div>
+                </div>
             </div>
 
-            <div class="case-study-text">
+            <div class="text-container">
                 <p class="highlight"><b>Challenge 2</b></p>
                 <h2>Intuitive user flow</h2>
 				<p>In order to make the main user flow as intuitive as possible, I used common navigational patterns and UI elements. The bottom navigation is a popular navigation option that provides easy access to the main regions within the app. The main user flow, of buying the tickets, was signalled with a call to action button of a contrasting colour. I tried to cater to the needs of users from different backgrounds and age groups through the use of icons, images and descriptive text. </p>
             </div>
 
-            <div class="results">
-                <img src="Media/Cinematic/Results/03Home-progressive.jpeg" class="responsive" width="200px" height="auto">
-                <img src="Media/Cinematic/Results/04Details-progressive.jpeg" class="responsive" width="200px" height="auto">
+            <div class="background-grey">
+                <div class="two-images-container">
+                    <div class="two-column-grid justify-centre">
+                        <img src="Media/Cinematic/Results/03Home-progressive.jpeg" class="responsive" width="200px" height="auto">
+                        <img src="Media/Cinematic/Results/04Details-progressive.jpeg" class="responsive" width="200px" height="auto">
+                    </div>
+                </div>
             </div>
 
-            <div class="case-study-text">
+            <div class="text-container">
                 <p class="highlight"><b>Challenge 3</b></p>
                 <h2>Feedback</h2>
 				<p>Guiding users through the flow was a priority when designing the Cinematic app. Research revealed that users experienced frustrations during checkout flows when no adequate feedback was provided. The designs included an order confirmation screen, improved feedback for the discounts screen and input field feedback on the payment details screen. </p>
             </div>
 
-            <div class="results">
-                <img src="Media/Cinematic/Results/05Confirmation-progressive.jpeg" class="responsive" width="200px" height="auto">
-                <img src="Media/Cinematic/Results/06Payment-progressive.jpeg" class="responsive" width="200px" height="auto">
+            <div class="background-grey">
+                <div class="two-images-container">
+                    <div class="two-column-grid justify-centre">
+                        <img src="Media/Cinematic/Results/05Confirmation-progressive.jpeg" class="responsive" width="200px" height="auto">
+                        <img src="Media/Cinematic/Results/06Payment-progressive.jpeg" class="responsive" width="200px" height="auto">
+                    </div>
+                </div>
             </div>
 
-            <div class="case-study-text">
+
+            <div class="text-container">
                 <h2>Takeaways</h2>
 				<p>This project leaned heavily on the design process as I explored how to incorporate the various techniques to develop and improve a digital product. What jumped out to me the most was how crucial the feedback from users was. I discovered that after iterating the designs to the best of my ability, having people use and test the prototype was what opened new directions to be explored. This step fostered more creativity and stoped me from getting stuck on a solution too soon. It helped me drop features early on, like the group ticket, because I realised users didn't find them useful. And finally, it helped me better empathise with the people that might use the Cinematic app and create solutions that addressed their problems and needs.</p>
             </div>

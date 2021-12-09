@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <style>
+        body {
+            background-color: red;
+            margin: 0;
+        }
+
+        #container {
+            background-color: blue;
+            max-width: 640px;
+            margin: auto;
+        }
+
+        #flexboxContainer {
+            background-color: cyan;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            grid-auto-flow: column;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #flexboxContainer {
+                grid-auto-flow: row;
+                grid-template-columns: none;
+            }
+        }
+
+        #a {
+            background-color: yellow;
+        }
+        #b {
+            background-color: purple;
+        }
+    </style>
+  </head>
+  <body>
+	<div id="container">
+        <div id="flexboxContainer">
+            <div id="a">A</div>
+            <div id="b">Bkjslkdjf alksdjflkasjdf lkajsdflk dkjlkd ldkjljflkj lskdjflksjdf lkjasdf kj</div>
+        </div>
+    </div>
+  </body>
+</html>
