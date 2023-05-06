@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
 }
 
 p {
@@ -26,8 +26,9 @@ p {
 
 .nav-bar {
     display: flex;
-    justify-content: space-between;
-    margin: 64px;
+    justify-content: right;
+    max-width: 1400px;
+    margin: 32px 32px 64px;
 }
 
 .nav-bar a {
@@ -35,29 +36,55 @@ p {
     font-family: "WorkSans";
     font-size: large;
     letter-spacing: 0.02em;
-    font-weight: 00;
     padding: 16px;
     text-decoration: none;
-    transition-duration: 0.4s;
-    cursor: pointer;  
+    transition: color var(--animation-duration);
+    cursor: pointer;
 }
 
 .nav-bar a:hover {
     color: var(--accent);
-
 }
-
-
 
 .content {
     max-width: 720px;
     margin: auto;
 }
 
-.icon {
-    background-color: aqua;
-    border-radius: 24px;
-    padding: 6px;
+.card {
+    display: flex;
+    background-color: var(--surface);
+}
+
+.thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 24px;
+    justify-content: space-between;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    color: var(--accent);
     fill: var(--accent);
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform var(--animation-duration);
+}
+
+.button:hover {
+    color: var(--accentHover);
+    fill: var(--accentHover);
+    transform: translateX(4px);
+}
+
+.icon {
+    padding: 6px;
 }
 

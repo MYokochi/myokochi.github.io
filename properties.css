@@ -8,13 +8,18 @@
 	--large: 16px;
 }
 
+@media (prefers-reduced-motion) {
+	:root { --animation-duration: 0s; }
+}
+
 @media (prefers-color-scheme: light) {
 	:root {
 		--primary: #000000;
 		--secondary: #505050;
-		--accent: #6b46ff;
+		--accent: #633DCC;
+		--accentHover: #8764E8;
 		--background: #ffffff;
-		--secondaryBackground: #f4f4f4;
+		--surface: #f4f4f4;
 		--accentBackground: #fafaff;
 		--shadow: 0px 2px 12px #cccccc;
 	}
@@ -24,8 +29,9 @@
 		--primary: #ffffff;
 		--secondary: #bbbbbb;
 		--accent: #aa80ee;
+		--accentHover: #6b46ff;
 		--background: #000000;
-		--secondaryBackground: #161616;
+		--surface: #161616;
 		--accentBackground: #242230;
 		--shadow: 0px 0px 2px #606060;
 	}
