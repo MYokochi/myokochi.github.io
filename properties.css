@@ -14,25 +14,29 @@
 
 @media (prefers-color-scheme: light) {
 	:root {
-		--primary: #000000;
-		--secondary: #505050;
+		--primary: #1E212B;
+		--secondary: #393C47;
+		--subdued: #BDB8CC;
 		--accent: #633DCC;
 		--accentHover: #8764E8;
-		--background: #ffffff;
-		--surface: #f4f4f4;
+		--background: #F5F2FC;
+		--surface: #F8F7FC;
 		--accentBackground: #fafaff;
+		--stroke: #ECEDF1;
 		--shadow: 0px 2px 12px #cccccc;
 	}
 }
 @media (prefers-color-scheme: dark) {
 	:root {
-		--primary: #ffffff;
-		--secondary: #bbbbbb;
-		--accent: #aa80ee;
-		--accentHover: #6b46ff;
+		--primary: #FCFDFF;
+		--secondary: #ECEDF1;
+		--subdued: #555964;
+		--accent: #A990EE;
+		--accentHover: #CBBCF5;
 		--background: #000000;
 		--surface: #161616;
 		--accentBackground: #242230;
+		--stroke: #1E212B;
 		--shadow: 0px 0px 2px #606060;
 	}
 }
