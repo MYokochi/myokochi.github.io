@@ -16,11 +16,12 @@
 	:root {
 		--primary: #1E212B;
 		--secondary: #393C47;
-		--subdued: #BDB8CC;
+		--subdued: #555964;
+		--mark: #AEB1B9;
 		--accent: #633DCC;
 		--accentHover: #8764E8;
-		--background: #F5F2FC;
-		--surface: #F8F7FC;
+		--background: #F8F7FC;
+		--surface: #ffffff;
 		--accentBackground: #fafaff;
 		--stroke: #ECEDF1;
 		--shadow: 0px 2px 12px #cccccc;
@@ -30,11 +31,12 @@
 	:root {
 		--primary: #FCFDFF;
 		--secondary: #ECEDF1;
-		--subdued: #555964;
+		--subdued: #AEB1B9;
+		--mark: #737680;
 		--accent: #A990EE;
 		--accentHover: #CBBCF5;
 		--background: #000000;
-		--surface: #161616;
+		--surface: #393C47;
 		--accentBackground: #242230;
 		--stroke: #1E212B;
 		--shadow: 0px 0px 2px #606060;
