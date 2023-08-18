@@ -78,7 +78,7 @@ ul li {
     justify-content: left;
     max-width: 1400px;
     margin: auto;
-    padding: 16px;
+    padding: 32px;
 }
 
 /* Content*/
@@ -148,6 +148,15 @@ ul li {
 }
 
 /* Buttons*/
+
+.card-button {
+    display: flex;
+    align-items: center;
+    color: var(--accent);
+    fill: var(--accent);
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .button {
     display: flex;
