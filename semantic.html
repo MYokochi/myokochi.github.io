@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/✨.ico">
+    <link rel="icon" href="assets/images/logo.png">
     <title>Margarida Yokochi Portfolio</title>
     <meta name="description" content="Portfolio Test">
 		<meta name="keywords" content="Design, Portfolio">
@@ -18,60 +18,77 @@
         <svg width="24" height="24" viewBox="0 0 24 24" class="icon" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M21.001 12.5C21.001 12.0858 20.6652 11.75 20.251 11.75H3.75098C3.33676 11.75 3.00098 12.0858 3.00098 12.5C3.00098 12.9142 3.33676 13.25 3.75098 13.25H20.251C20.6652 13.25 21.001 12.9142 21.001 12.5Z"/>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0303 5.21968C10.7374 4.92678 10.2626 4.92678 9.96967 5.21968L3.21967 11.9697C2.92678 12.2626 2.92678 12.7374 3.21967 13.0303L9.96967 19.7803C10.2626 20.0732 10.7374 20.0732 11.0303 19.7803C11.3232 19.4874 11.3232 19.0126 11.0303 18.7197L4.81066 12.5L11.0303 6.28034C11.3232 5.98744 11.3232 5.51257 11.0303 5.21968Z"/>
-          </svg>Portfolio          
+          </svg>Back to work          
       </a>
    </nav>
 
     <div class="content">
       <div>
-        <h1> Implementing a Semantic Colour System to Support Theming</h1>
-        <p><b style="color: var(--accent);">Role:</b> Product designer<br><b style="color: var(--accent);">Timeline:</b>  December 2022 - February 2023</p>
+        <h1>Creating a semantic color system to support theming</h1>
+        <p class="subtitle">Refactoring an existing color system to support theming and improve consistency</p>
+        <p class="details"><em >Role:</em> Product Designer<br><em>Timeline:</em></b> January 2023 - March 2023</p>
+        
       </div>
-      <img src="assets/semantic/color.png" class="image" width="720px" height="auto">
-
-        <div class="section">
-          <h2>Overview</h2>
-          <p>I was tasked with improving the colour system of an existing design library for an app that was about to launch an MVP. The goal was to create a system that would increase consistency across multiple products, improve the usability of the design library, and support dark theme in the future.</p>
-        </div>
-        
-        <div class="section">
-          <h2>Problem</h2>
-          <p>The existing colour system resulted in inconsistencies across products and made it hard for developers to figure out which colours were used where. This caused confusion and inefficiency in the design and development process. Additionally, we needed to support dark theme and this proved to be hard with the existing system.</p>
-          <img src="assets/semantic/color_old.png" class="image" alt="">
-        </div>
-        
-        <div class="section">
-          <h2>Process</h2>
-          <p>To address these issues, our front-end developers proposed implementing a semantic colour system. First, we needed to know how colour was used in the designs. I started by providing this overview and proposed a new naming system. I then worked closely with the development team to facilitate alignment between design and development and avoid our teams moving in different directions.</p>
-          <p>The system had to cater to a small team since we were only two designers and two front-end developers. This brought additional challenges as the main goal was to create something that would increase consistency across multiple products, improve the usability of the design library, improve our collaboration across the team while being simple and easy to maintain.</p>
-          <p>I started by generating colour palettes from the existing library. These shades were then used as tokens for the semantic style definitions. To create a semantic system, I definined commonly used styles like accent colours, text, and icons. After aligning with the team, it was time to update the library. I created an overview of the library components to make sure the system was complete and created more styles if needed.</p>
-          <p>When updating the colour styles, I added short descriptions for the styles so that other designers could understand the system and how to use it. I also created some instructions on the process of generating new colour styles.</p>
-          <img src="assets/semantic/semantic.png" class="image" alt="">
-        </div>
-        
-        <div class="section">
-          <h2>Challenges</h2>
-          <p>The goal of this initiative was to create a system that would improve the workflow and collaboration of the team while being simple and easy to maintain. This meant defining the least amount of styles, which inevitably resulted in more dependencies between them. I think it was a price worth paying for the benefits of implementing a semantic system - more consistency, better collaboration, better documentation, and of course, theming for free.</p>
-        </div>
        
-        <div class="section">
-          <h2>Results</h2>
-          <p>The new semantic colour styles were named according to their usage, making it easy for designers and developers to understand how to work with them. Multiple themes can now be achieved by replacing the tokens for the colour styles. The new system increased consistency across multiple products, improved the usability of the design library, and made it easier for the design and development teams to collaborate effectively.</p>
-          <div style="display: flex;">
-            <img src="assets/semantic/light.png" class="image-row" alt="">
-            <img src="assets/semantic/dark.png" class="image-row" alt="">
+      <div class="section">
+        <p>Small teams on client projects don’t get much help in creating and maintaining design systems. The designer has to decide on a system and level of detail based on the project type, budget, and time-frame. Decisions made early in the project with limited information can cause issues later on. Sometimes, the only solution is to reassess and choose a different approach.</p>
+        <p>When I joined this project, our team faced such challenges. There were two small teams working on different products and sharing a design library. Both products were in their early stages, and my team was gearing up to launch the MVP for the mobile app. We were working on a secure communication platform, while the other team was developing a digital ID solution.</p>
+      </div>
+      <div class="section">
+        <h2 id="problem">The problem</h2>
+        <p>Inconsistencies started popping up across the different products. The existing color system was too flexible, making it hard for different designers to agree on how to use colors. Developers struggled to maintain color consistency, leading to inefficiencies in the design and development processes. To add to the challenge, we received a new requirement, to support theming.</p>
+      </div>
+
+      
+
+      <div class="section">
+        <h2 id="process">Process</h2>
+        <p>To tackle these issues, I met with the front-end developers. We decided to shift towards a semantic way of naming colors. This meant using names like "background primary" instead of intrinsic properties like hue and lightness.</p>
+        <p>I began by examining how colors were used in the designs. I generated a range of shades based on the colors in the library and used them as tokens for the semantic style definitions.Working closely with the development team, I gathered feedback and refined the new naming proposal.</p>
+        <img src="assets/semantic/palette.webp" class="image" alt="">
+        <p class="annotation">– Shades created from the brand colors</p>
+        <img src="assets/semantic/styles.webp" class="image" alt="">
+        <p class="annotation">– Example of the semantic style definitions</p>
+        <p>After updating the color styles in the library, I added brief descriptions of how colors were used. This documentation enabled other designers to quickly understand the system and its usage. I also documented the process of generating new styles.</p>
+      </div>
+
+      <div class="section">
+        <h2 id="challenges">Challenges</h2>
+        <p>The goal of this initiative was to create a system that would improve the workflow and collaboration of the team while being simple and easy to maintain. This meant defining the least amount of styles, which inevitably resulted in more dependencies between styles. This was a compromise, but the result was a more consistent system, better collaboration across teams, and easy support for theming.</p>
+        <img src="assets/semantic/semantic-noBG.webp" class="image" alt="">
+        <p class="annotation">– Example of a dark theme using the new system</p>
+      </div>
+
+      <div class="section">
+        <h2 id="results">Results</h2>
+        <p>Naming the colors according to their usage made it easier for designers and developers to understand how to use them. It made it possible to support theming by simply replacing the color values without the need to change their names.</p>
+        <p>The semantic system increased consistency across multiple products, improved usability of the design library, and made it easier for the design and development teams to collaborate more effectively.</p>
+      </div>
+    </div>
+
+    <div class="link-card-container">
+      <a class="link-card" type="button" href="ai.html">
+        <img src="assets/ai/ai.webp" class="thumbnail" width="auto" height="auto">
+        <div class="container">
+          <div>
+            <h3>Can AI help users configure complex products?</h3>
+            <!-- <p>Creating responsive 3D product configurators using modular design principles.</p> -->
+          </div>
+          <div class="card-button">Next case study
+            <svg width="24" height="24" viewBox="0 0 24 24" class="icon" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3 12.5C3 12.0858 3.33579 11.75 3.75 11.75H20.25C20.6642 11.75 21 12.0858 21 12.5C21 12.9142 20.6642 13.25 20.25 13.25H3.75C3.33579 13.25 3 12.9142 3 12.5Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.9706 5.21967C13.2635 4.92678 13.7384 4.92678 14.0313 5.21967L20.7813 11.9697C21.0742 12.2626 21.0742 12.7374 20.7813 13.0303L14.0313 19.7803C13.7384 20.0732 13.2635 20.0732 12.9706 19.7803C12.6778 19.4874 12.6778 19.0126 12.9706 18.7197L19.1903 12.5L12.9706 6.28033C12.6778 5.98744 12.6778 5.51256 12.9706 5.21967Z" />
+            </svg>
           </div>
         </div>
-
-        <div class="section">
-          <h2>Conclusion</h2>
-          <p>Overall, the implementation of a semantic colour system was a success. The new system provided a scalable and flexible solution that was easy to use and maintain, resulting in better collaboration and a more efficient design process.</p>
-        </div>
-      </div>
+      </a>
+    </div>
 
     <footer>
       <div>
-        <p class="footer">Margarida Yokochi &#x2022 May 2023</p>
+        <p class="footer">Margarida Yokochi &#x2022 April 2024</p>
       </div>
   </footer>
 

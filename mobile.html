@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo.png">
+    <title>Margarida Yokochi Portfolio</title>
+    <meta name="description" content="Portfolio Test">
+		<meta name="keywords" content="Design, Portfolio">
+		<meta name="author" content="Margarida Yokochi">
+    <link rel="stylesheet" href="properties.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+		<nav class="back">
+      <a type="button" class="button"  href="index.html">
+        <svg width="24" height="24" viewBox="0 0 24 24" class="icon" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M21.001 12.5C21.001 12.0858 20.6652 11.75 20.251 11.75H3.75098C3.33676 11.75 3.00098 12.0858 3.00098 12.5C3.00098 12.9142 3.33676 13.25 3.75098 13.25H20.251C20.6652 13.25 21.001 12.9142 21.001 12.5Z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0303 5.21968C10.7374 4.92678 10.2626 4.92678 9.96967 5.21968L3.21967 11.9697C2.92678 12.2626 2.92678 12.7374 3.21967 13.0303L9.96967 19.7803C10.2626 20.0732 10.7374 20.0732 11.0303 19.7803C11.3232 19.4874 11.3232 19.0126 11.0303 18.7197L4.81066 12.5L11.0303 6.28034C11.3232 5.98744 11.3232 5.51257 11.0303 5.21968Z"/>
+          </svg>Back to work          
+      </a>
+   </nav>
+
+    <div class="content">
+      <div>
+        <h1>Improving mobile experience of product customization</h1>
+        <p class="subtitle">Creating responsive 3D configurators using modular design principles</p>
+        <p class="details"><em >Role:</em> Product Designer<br><em>Timeline:</em></b>  February 2024 - March 2024</p>
+        
+      </div>
+       
+      <div class="section">
+        <h2 id="context">Context</h2>
+        <p>We received feedback from multiple clients that the configurators we built were too complex and hard to use. Additionally, the mobile experience wasn't given much thought initially. Everything was built on the assumption that configuring complex products would be easier on larger screens. However, many users were accessing these configurators on mobile first. For instance, for L'Atelier's kitchen configurator, 60% of traffic came from mobile devices.</p>
+      </div>
+
+      <div class="section">
+        <h2 id="goal">Goal</h2>
+        <p>Our goal was to redesign the mobile experience of the configurators. I was tasked with addressing the mobile experience on the L'Atelier kitchen configurator. The goal was to create a scalable solution that could be applied to other configurators.</p>
+      </div>
+      
+      <div class="section">
+        <h2 id="kitchen-configurator">Kitchen Configurator</h2>
+        <p>Analyzing the kitchen configurator, I identified the main issues:</p>
+        <ul>
+          <div>
+            <svg class="logo" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.0481 11.7618L9.54814 23.0118C9.43687 23.1306 9.28999 23.2099 9.12967 23.2379C8.96936 23.2658 8.8043 23.2409 8.65941 23.1668C8.51452 23.0927 8.39766 22.9735 8.32645 22.8272C8.25525 22.6808 8.23358 22.5153 8.2647 22.3556L9.63907 15.4809L4.23626 13.4521C4.12023 13.4087 4.01675 13.3373 3.93508 13.2441C3.85341 13.151 3.79609 13.039 3.76823 12.9183C3.74037 12.7976 3.74285 12.6719 3.77545 12.5524C3.80804 12.4328 3.86973 12.3233 3.95501 12.2334L14.455 0.983396C14.5663 0.864649 14.7132 0.785313 14.8735 0.757362C15.0338 0.729411 15.1988 0.754362 15.3437 0.828448C15.4886 0.902534 15.6055 1.02174 15.6767 1.16807C15.7479 1.3144 15.7696 1.47992 15.7384 1.63965L14.3603 8.52183L19.7631 10.5478C19.8783 10.5915 19.981 10.6629 20.062 10.7556C20.143 10.8484 20.2 10.9597 20.2278 11.0797C20.2556 11.1998 20.2534 11.3248 20.2214 11.4437C20.1894 11.5627 20.1286 11.6719 20.0444 11.7618H20.0481Z"/>
+              </svg>
+            <h3><em>Main Issues</em></h3>
+          </div>
+          <li>Information architecture</li>
+          <li>Navigation pattern</li>
+          <li>Cognitive load</li>
+        </ul>
+        <p>The design assumed a linear path to create the kitchen design, starting with the style, then editing the base, and so on. However, during usability testing, users tended to jump between sections and create their unique paths. Another issue was that the configuration list was often mistaken for a menu of elements to add to the range. Users expected those elements to be added to their configuration upon clicking them.</p>
+        <img src="assets/mobile/issues.webp" class="image" alt="">
+        <p class="annotation">– Image showing the main issues: steps navigation and configuration list</p>
+        <p>Options like tabs were often overlooked, as well as the ability to adjust cabinet size, which was one of our client's unique selling points.</p>
+        <p>On mobile, usability testing showed the configurator was practically unusable due to overwhelming information, small clickable elements, and impractical interactions with the model.</p>
+        <img src="assets/mobile/mobile-old.webp" class="image" alt="">
+        <p class="annotation">– Image showing the cluttered UI on mobile</p>
+      </div>
+
+      <div class="section">
+        <h2 id="redesign-goal">Redesign goals</h2>
+        <p>The goal was to simplify and reduce the initial amount of information presented. This would make it easier to process available actions while allowing users to choose their own path.</p>
+        <p>Improving navigation and choosing scalable patterns for both large and small screens were the main priorities. I also aimed to bring more focus to the product, in this case the kitchen range, by promoting direct interactions and manipulation of the model.</p>
+      </div>
+
+      <div class="section">
+        <h2 id="validation">Validation</h2>
+        <p>I proposed the following design, and, together with the UX Researcher, we planned an unmoderated test to compare it with the production version.</p>
+        <video style="width: 300px; height: auto; border-radius: 50px;" autoplay muted playsinline loop>
+          <source src="assets/mobile/mobileNew.mp4" type="video/mp4">
+        </video>
+        <p class="annotation">– The mobile redesign</p>
+      </div>
+
+      <div class="section">
+        <h2 id="results">What we learned</h2>
+        <p>The new design outperformed the old one in almost every task except one: changing colors, which we had anticipated might be a challenge due to the model being hidden. These results confirmed our progress, and we planned further improvements.</p>
+        <img src="assets/mobile/resultsA.webp" class="image" alt="">
+        <p class="annotation">– Time it took to complete one of the tasks with the new design</p>
+        <img src="assets/mobile/resultsB.webp" class="image" alt="">
+        <p class="annotation">– Time it took to complete the same task with the old design</p>
+      </div>
+
+      <div class="section">
+        <h2 id="improvements">Further Improvements</h2>
+        <p>We improved the designs based on the research results. We made it possible to view the model while changing options that affect its visual appearance such as color and style.</p>
+      </div>
+
+      <div class="section">
+        <h2 id="learnings">Learnings</h2>
+        <p>By adopting a more modular approach and grouping available actions, we significantly simplified the experience and reduced cognitive load. Iterating on this approach led to a more efficient design, not only in terms of space usage but also usability. During unmoderated testing, the redesign reduced average time on task by 31%. Task completion only improved by 1%, but it was already pretty high at 83% completion rate on average.</p>
+      </div>
+
+      <div class="section">
+        <h2 id="next">Going live</h2>
+        <p>Next, we'll be going live and plan to measure performance in production to validate improvements and identify areas that need additional work.</p>
+      </div>
+    </div>
+
+    <div class="link-card-container">
+      <a class="link-card" type="button" href="semantic.html">
+        <img src="assets/semantic/semantic.webp" class="thumbnail" width="auto" height="auto">
+        <div class="container">
+          <div>
+            <h3>Creating a semantic color system to support theming</h3>
+            <!-- <p>Creating responsive 3D product configurators using modular design principles.</p> -->
+          </div>
+          <div class="card-button">Next case study
+            <svg width="24" height="24" viewBox="0 0 24 24" class="icon" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3 12.5C3 12.0858 3.33579 11.75 3.75 11.75H20.25C20.6642 11.75 21 12.0858 21 12.5C21 12.9142 20.6642 13.25 20.25 13.25H3.75C3.33579 13.25 3 12.9142 3 12.5Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.9706 5.21967C13.2635 4.92678 13.7384 4.92678 14.0313 5.21967L20.7813 11.9697C21.0742 12.2626 21.0742 12.7374 20.7813 13.0303L14.0313 19.7803C13.7384 20.0732 13.2635 20.0732 12.9706 19.7803C12.6778 19.4874 12.6778 19.0126 12.9706 18.7197L19.1903 12.5L12.9706 6.28033C12.6778 5.98744 12.6778 5.51256 12.9706 5.21967Z" />
+            </svg>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <footer>
+      <div>
+        <p class="footer">Margarida Yokochi &#x2022 April 2024</p>
+      </div>
+  </footer>
+
+  </body>
+</html>

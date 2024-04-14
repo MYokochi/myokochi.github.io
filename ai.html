@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/✨.ico">
+    <link rel="icon" href="assets/images/logo.png">
     <title>Margarida Yokochi Portfolio</title>
     <meta name="description" content="Portfolio Test">
 		<meta name="keywords" content="Design, Portfolio">
@@ -18,70 +18,143 @@
         <svg width="24" height="24" viewBox="0 0 24 24" class="icon" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M21.001 12.5C21.001 12.0858 20.6652 11.75 20.251 11.75H3.75098C3.33676 11.75 3.00098 12.0858 3.00098 12.5C3.00098 12.9142 3.33676 13.25 3.75098 13.25H20.251C20.6652 13.25 21.001 12.9142 21.001 12.5Z"/>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0303 5.21968C10.7374 4.92678 10.2626 4.92678 9.96967 5.21968L3.21967 11.9697C2.92678 12.2626 2.92678 12.7374 3.21967 13.0303L9.96967 19.7803C10.2626 20.0732 10.7374 20.0732 11.0303 19.7803C11.3232 19.4874 11.3232 19.0126 11.0303 18.7197L4.81066 12.5L11.0303 6.28034C11.3232 5.98744 11.3232 5.51257 11.0303 5.21968Z"/>
-          </svg>Portfolio          
+          </svg>Back to work          
       </a>
    </nav>
 
     <div class="content">
       <div>
-        <h1>AI in 3D Product Configurators: Improving Product Customisation Experience</h1>
-        <div>
-          <p><b style="color: var(--accent);">Role:</b> Product Designer, UX Researcher<br><b style="color: var(--accent);">Timeline:</b>  April 2023 - July 2023</p>
-        </div>
+        <h1>Can AI help users configure complex products?</h1>
+        <p class="subtitle">Exploring conversational interfaces for 3D product configurators</p>
+        <p class="details"><em >Role:</em> Product Designer<br><em>Timeline:</em></b>  November 2023 - April 2024</p>
         
       </div>
-      <img src="assets/ai/ai.png" class="image" width="720px" height="auto">
+      <img src="assets/ai/illustration.webp" class="image" width="720px" height="auto">
        
       <div class="section">
-        <h2 id="overview">Overview</h2>
-        <p>The goal of this initiative was to explore ways in which a large language model integration could improve the experience of our 3D product configurators.</p>
-        <p>This case study covers the technical validation phase and early insights. We integrated GPT-4 using the OpenAI API. Our first learning sessions helped us get a better understanding of the potential and main challenges, as we searched for ways in which AI could add value to users.</p>
+        <p>In the midst of the AI gold rush, the agency where I worked found itself in a transition phase. We aimed to shift from offering design and development services to developing and licensing our own product. This sparked a new direction, driven by the idea of creating AI-powered creator tools.</p>
+        <p>My team was tasked to reimagine the online shopping experience of custom made or customizable products, through conversation. This is what we learned from our early experiments, using AI to help users create unique products online.</p>
       </div>
       <div class="section">
-        <h2 id="technical-validation">Technical Validation</h2>
-        <p>Since OpenAI announced their API, everyone&#39;s been trying to figure out how to integrate AI in their products.</p>
-        <p>There are a lot of unknowns when using new technologies and finding novel applications. From a technical, we had to find out if it was possible to configure a product using only natural language.</p>
-        <p>For this first phase, we implemented a chat that opened independently from the existing interface. We wanted to test mainly functionality. The goal was to validate if all aspects of configuration could be changed using only the chat.</p>
-        <img src="assets/ai/sketch.png" class="image" alt=""></p>
+        <h2 id="context">Why custom products?</h2>
+        <p>The agency had built a few 3D product configurators for clients. These tools simplify the sales process for companies selling customizable products, such as kitchen ranges, garage cabinets or made-to-order pillows, by allowing users to specify their preferences online.</p>
+        <img src="assets/ai/before.webp" class="image" alt=""></p>
+        <p class="annotation">– Example of a kitchen configurator</p>
+        <p>However, feedback from clients indicated that these configurators were too complex and difficult to use. We needed a solution.</p>
+        <p>This case study covers our first AI implementations in the kitchen configurator for L’Atelier Paris. During this partnership, we explored ways in which to use this new technology to improve the online configuration experience. Our goal was to learn from this initiative in order to inform the product direction.</p>
       </div>
 
       
 
       <div class="section">
-        <h2 id="learnings-from-research">Learnings from Research</h2>
-        <p>The first step was to validate if this was an idea worth pursuing. We wanted to get input from people as soon as possible to get an idea of real world applications of this feature. In the first iteration, we integrated a chatbot into an existing kitchen configurator. Users could ask questions or instruct it to make changes such as adding or removing components, changing the size of elements or applying another colour.</p>
-        <p>We found that, although this conversational approach had a lot of potential especially when users struggled to accomplish some task, <b>the chatbot framing wasn&#39;t ideal as people had strong notions of this concept based on previous bad experiences.</b> Essentially, users were impressed by the functionality once we asked them to try the feature but didn&#39;t have the motivation to try it themselves. The first big insight was that the way the feature was framed wasn&#39;t perceived as desirable. </p>
+        <h2 id="poc">How it started
+        </h2>
+        <p>The CEO hypothesized that using a conversational interface could simplify the experience. At this stage we didn't know if it would be possible to integrate a LLM (Large Language Model) in the context of 3D product configurators. My team created a basic chatbot for the kitchen configurator. Users could interact with it to customize various aspects of their kitchen.</p>
+        <video class="image" autoplay muted playsinline loop>
+          <source src="assets/ai/poc.mp4" type="video/mp4">
+        </video>
+        <p class="annotation">– Proof of concept: configuring using natural language</p>
+        <p>Through usability testing, we discovered:</p>
         <ul>
-        <li>Users associated the chatbot with bad experiences and limited capabilities  </li>
-        <li>The functionality delivered more value when users were stuck or needed help to complete an action  </li>
-        <li>The feature was not perceived as desirable  </li>
-        <li>Users still wanted control and seeing the available options helped them model what was possible  </li>
-        <li>Users expected more guidance from an assistant
-        </li>
+          <div>
+            <svg class="logo" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.0481 11.7618L9.54814 23.0118C9.43687 23.1306 9.28999 23.2099 9.12967 23.2379C8.96936 23.2658 8.8043 23.2409 8.65941 23.1668C8.51452 23.0927 8.39766 22.9735 8.32645 22.8272C8.25525 22.6808 8.23358 22.5153 8.2647 22.3556L9.63907 15.4809L4.23626 13.4521C4.12023 13.4087 4.01675 13.3373 3.93508 13.2441C3.85341 13.151 3.79609 13.039 3.76823 12.9183C3.74037 12.7976 3.74285 12.6719 3.77545 12.5524C3.80804 12.4328 3.86973 12.3233 3.95501 12.2334L14.455 0.983396C14.5663 0.864649 14.7132 0.785313 14.8735 0.757362C15.0338 0.729411 15.1988 0.754362 15.3437 0.828448C15.4886 0.902534 15.6055 1.02174 15.6767 1.16807C15.7479 1.3144 15.7696 1.47992 15.7384 1.63965L14.3603 8.52183L19.7631 10.5478C19.8783 10.5915 19.981 10.6629 20.062 10.7556C20.143 10.8484 20.2 10.9597 20.2278 11.0797C20.2556 11.1998 20.2534 11.3248 20.2214 11.4437C20.1894 11.5627 20.1286 11.6719 20.0444 11.7618H20.0481Z"/>
+              </svg>
+            <h3><em>Insights</em></h3>
+          </div>
+          <li>Users had negative perceptions of chatbots.</li>
+          <li>The chat interface lacked clarity and affordances.</li>
+          <li>The value proposition wasn't clear.</li>
+          <li>Some users were impressed by the functionality.</li>
+          <li>There were mixed feelings, including excitement and fear, towards AI.</li>
         </ul>
-        <img src="assets/ai/chat.png" class="image" alt="">
+        <img src="assets/ai/results.webp" class="image" alt="">
+        <p class="annotation">– A few examples from usability testing</p>
       </div>
 
       
 
       <div class="section">
-        <h2 id="rethinking-our-approach">Rethinking our Approach</h2>
-        <p>Now that we knew we could deliver technically, we needed to find a way to add value with this feature. We made a plan to align the team but realised that business objectives and vision for the product weren’t clear. We decided to work on defining this vision first so we could better understand how to frame the feature in the context of the whole product.</p>
-        <img src="assets/ai/chat_opened.png" class="image" alt="">
+        <h2 id="goal">Creating a desirable experience</h2>
+        <p>Following the proof of concept, our aim was to develop a desirable AI experience, starting with the kitchen configurator.</p>
+        <p>Simplifying the experience was crucial since our primary users were older, wealthy Americans. Additionally, architects and designers at physical showrooms used the tool to create quick proposals during client appointments.</p>
+        <img src="assets/ai/kitchen.webp" class="image" alt="">
+        <p class="annotation">– Example of a kitchen built by L'Atelier</p>
       </div>
 
-
-      
+      <div class="section">
+        <h2 id="process">Simulating a Sales Representative</h2>
+        <p>We conducted a workshop with key stakeholders, aiming to understand offline sales processes better. The outcome was a hypothesis: simulating a sales representative would assist users in creating their dream kitchen. We wanted to replicate the initial conversation customers might have at a physical showroom.</p>
+        <img src="assets/ai/flows.webp" class="image" alt="">
+        <p class="annotation">– Example of a conversation flow, created to inform the behaviour and goals of the AI assistant</p>
+        <p>To test this, I created realistic prototypes where test subjects could type their answers. Sophie, our virtual sales representative, asked them four questions to gather requirements and create an initial recommendation.</p>
+        <video class="image" autoplay muted playsinline loop>
+          <source src="assets/ai/discovery.mp4" type="video/mp4">
+        </video>
+        <p class="annotation">– A prototype I created to test generating the initial product recommendation</p>
+      </div>
 
       <div class="section">
-        <h2 id="conclusion">Conclusion</h2>
-        <p>Starting with a solution is often dangerous because you run the risk of building something that doesn&#39;t solve a real problem or user need. It is exciting to use new technologies and often necessary to create proofs of concept for technical validation. It was important for our team to see users be impressed by the capabilities of the feature and still say – it&#39;s cool but I don&#39;t really need it. Now we can focus on uncovering actual user needs and build a solution that delivers value.</p>
+        <h2 id="poc">What we learned</h2>
+        <p>Despite numerous iterations, we consistently found:</p>
+        <ul>
+          <div>
+            <svg class="logo" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.0481 11.7618L9.54814 23.0118C9.43687 23.1306 9.28999 23.2099 9.12967 23.2379C8.96936 23.2658 8.8043 23.2409 8.65941 23.1668C8.51452 23.0927 8.39766 22.9735 8.32645 22.8272C8.25525 22.6808 8.23358 22.5153 8.2647 22.3556L9.63907 15.4809L4.23626 13.4521C4.12023 13.4087 4.01675 13.3373 3.93508 13.2441C3.85341 13.151 3.79609 13.039 3.76823 12.9183C3.74037 12.7976 3.74285 12.6719 3.77545 12.5524C3.80804 12.4328 3.86973 12.3233 3.95501 12.2334L14.455 0.983396C14.5663 0.864649 14.7132 0.785313 14.8735 0.757362C15.0338 0.729411 15.1988 0.754362 15.3437 0.828448C15.4886 0.902534 15.6055 1.02174 15.6767 1.16807C15.7479 1.3144 15.7696 1.47992 15.7384 1.63965L14.3603 8.52183L19.7631 10.5478C19.8783 10.5915 19.981 10.6629 20.062 10.7556C20.143 10.8484 20.2 10.9597 20.2278 11.0797C20.2556 11.1998 20.2534 11.3248 20.2214 11.4437C20.1894 11.5627 20.1286 11.6719 20.0444 11.7618H20.0481Z"/>
+              </svg>
+            <h3><em>Insights</em></h3>
+          </div>
+          <li>Users preferred conventional interfaces.</li>
+          <li>They wanted to interact with the product.</li>
+          <li>Text input was inefficient.</li>
+          <li>Users desired control.</li>
+          <li>The chat experience lacked affordances.</li>
+        </ul>
+        <img src="assets/ai/sophie.webp" class="image" alt="">
+        <p class="annotation">– The main insight shared by our UX researcher</p>
+      </div>
+
+      <div class="section">
+        <h2 id="purpose">Finding purpose</h2>
+        <p>Based on these findings, we aligned with stakeholders. We agreed that the AI capabilities would be best utilized for generating recommendations, answering questions, and assisting users as needed. We shifted away from a fully guided design process and focused on providing value at key moments.</p>
+      </div>
+
+      <div class="section">
+        <h2 id="next-steps">Next steps</h2>
+        <p>For the initial release, we simplified the interaction with the virtual sales representative, Sophie, to a single dialog. Users could choose to design independently, seek help from Sophie, or use text input for a starting point. We planned to gather real data to inform further decisions.</p>
+        <p>In the meantime, we continued exploring more contextual approaches that would better integrate into the whole design experience. The first results from unmoderated testing looked very promising – for the first time in usability testing, we saw people intuitively interact with the AI feature and ask questions about the product. We'll be exploring this direction further.</p>
+        <video class="image" autoplay muted playsinline loop>
+          <source src="assets/ai/hybrid.mp4" type="video/mp4">
+        </video>
+        <p class="annotation">– A prototype I created to test a contextual approach. As the user navigates, the suggestions adapt to their actions.</p>
       </div>
     </div>
 
+    <div class="link-card-container">
+      <a class="link-card" type="button" href="mobile.html">
+        <img src="assets/mobile/mobile.webp" class="thumbnail" width="auto" height="auto">
+        <div class="container">
+          <div>
+            <h3>Mobile experience of product customization</h3>
+            <!-- <p>Creating responsive 3D product configurators using modular design principles.</p> -->
+          </div>
+          <div class="card-button">Next case study
+            <svg width="24" height="24" viewBox="0 0 24 24" class="icon" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3 12.5C3 12.0858 3.33579 11.75 3.75 11.75H20.25C20.6642 11.75 21 12.0858 21 12.5C21 12.9142 20.6642 13.25 20.25 13.25H3.75C3.33579 13.25 3 12.9142 3 12.5Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.9706 5.21967C13.2635 4.92678 13.7384 4.92678 14.0313 5.21967L20.7813 11.9697C21.0742 12.2626 21.0742 12.7374 20.7813 13.0303L14.0313 19.7803C13.7384 20.0732 13.2635 20.0732 12.9706 19.7803C12.6778 19.4874 12.6778 19.0126 12.9706 18.7197L19.1903 12.5L12.9706 6.28033C12.6778 5.98744 12.6778 5.51256 12.9706 5.21967Z" />
+            </svg>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    
+
     <footer>
       <div>
-        <p class="footer">Margarida Yokochi &#x2022 May 2023</p>
+        <p class="footer">Margarida Yokochi &#x2022 April 2024</p>
       </div>
   </footer>
 
