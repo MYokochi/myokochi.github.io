@@ -282,6 +282,18 @@ ul li {
         font-size: 1.4em;
     }
 
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+    }
+
     .back {
         padding: 8px;
     }
